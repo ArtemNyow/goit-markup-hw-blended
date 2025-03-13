@@ -92,11 +92,12 @@
           </svg>
         </a>
       </div>
-      <!-- #endregion Header -->
     </header>
+    <!-- #endregion Header -->
     <main>
-      <div class="container">
-        <section class="hero-section">
+      <!-- #region Header -->
+      <section class="hero-section">
+        <div class="container hero-container">
           <div class="hero-left-side">
             <h1 class="hero-title">
               Work at the speed of thought
@@ -113,38 +114,56 @@
                 </button>
               </li>
               <li class="hero-btn-item">
-                <button
-                  class="hero-btn-watch"
-                  type="button"
-                >
-                  Watch the Video
-                </button>
+                <div class="hero-btn-icon">
+                  <button
+                    class="hero-btn-watch"
+                    type="button"
+                  >
+                    <svg
+                      class="hero-btn-play"
+                      width="20"
+                      height="17"
+                    >
+                      <use
+                        href="./images/icons.svg#icon-button-play"
+                      ></use>
+                    </svg>
+
+                    Watch the Video
+                  </button>
+                </div>
               </li>
             </ul>
           </div>
           <img
             class="hero-img"
-            src="./images/hero-img.svg"
+            src="./images/hero/hero-img.svg"
             alt="hero-img"
             width="610"
             height="555"
           />
-        </section>
-      </div>
+        </div>
+      </section>
+      <!-- #endregion Hero -->
+      <!-- #region Product -->
       <section class="product-section">
-        <div class="container">
+        <div class="container product-container">
           <h2 class="product-title">
             Product was Built Specifically for You
           </h2>
           <ul class="product-list">
             <li class="product-list-item">
-              <img
-                class="product-icon"
-                src="./images/icon-1.svg"
-                alt="Mouse"
-                width="54"
-                height="62"
-              />
+              <div class="product-container-icon cursor">
+                <svg
+                  class="product-icon"
+                  width="12"
+                  height="18"
+                >
+                  <use
+                    href="./images/icons.svg#icon-cursor"
+                  ></use>
+                </svg>
+              </div>
               <h3 class="product-list-title">
                 First click tests
               </h3>
@@ -153,13 +172,17 @@
               </p>
             </li>
             <li class="product-list-item">
-              <img
-                class="product-icon"
-                src="./images/icon-2.svg"
-                alt="blue-logo"
-                width="54"
-                height="62"
-              />
+              <div class="product-container-icon figure">
+                <svg
+                  class="product-icon"
+                  width="18"
+                  height="18"
+                >
+                  <use
+                    href="./images/icons.svg#icon-figure"
+                  ></use>
+                </svg>
+              </div>
               <h3 class="product-list-title">
                 Design surveys
               </h3>
@@ -169,13 +192,17 @@
               </p>
             </li>
             <li class="product-list-item">
-              <img
-                class="product-icon"
-                src="./images/icon-3.svg"
-                alt="heart-logo"
-                width="54"
-                height="62"
-              />
+              <div class="product-container-icon heard">
+                <svg
+                  class="product-icon"
+                  width="16"
+                  height="18"
+                >
+                  <use
+                    href="./images/icons.svg#icon-heard"
+                  ></use>
+                </svg>
+              </div>
               <h3 class="product-list-title">
                 Preference tests
               </h3>
@@ -184,13 +211,17 @@
               </p>
             </li>
             <li class="product-list-item">
-              <img
-                class="product-icon"
-                src="./images/icon-4.svg"
-                alt="Time-logo"
-                width="54"
-                height="62"
-              />
+              <div class="product-container-icon time">
+                <svg
+                  class="product-icon"
+                  width="14"
+                  height="18"
+                >
+                  <use
+                    href="./images/icons.svg#icon-time"
+                  ></use>
+                </svg>
+              </div>
               <h3 class="product-list-title">
                 Five second tests
               </h3>
@@ -205,6 +236,7 @@
           </button>
         </div>
       </section>
+      <!-- #endregion Product -->
       <section>
         <div class="container management-container">
           <div class="management-left-container">
@@ -241,24 +273,24 @@
               </li>
             </ul>
           </div>
-          <img
+          <!-- <img
             class="management-img"
             src="./images/management-img.svg"
             alt="management-img"
             width="540"
             height="500"
-          />
+          /> -->
         </div>
       </section>
       <section>
         <div class="container customers-container">
-          <img
+          <!-- <img
             class="customers-img"
             src="./images/support-img.svg"
             alt="support-img"
             width="540"
             height="500"
-          />
+          /> -->
           <div class="customer-right-container">
             <p class="upper-title-customers">
               Easier decision making for
@@ -332,12 +364,12 @@
               If you are looking for a new way to promote
               your business that won’t cost you more money,
             </p>
-            <img
+            <!-- <img
               src="./images/collaboration-img.svg"
               alt="collaboration-img"
               width="540"
               height="500"
-            />
+            /> -->
           </li>
         </ul>
       </section>
