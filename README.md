@@ -1,1 +1,1 @@
-# goit-markup-hw-blendet-01
+# goit-markup-hw-blendet
