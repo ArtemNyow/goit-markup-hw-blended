@@ -76,7 +76,10 @@
         </nav>
         <ul class="header-btn-list">
           <li class="header-btn-item">
-            <button class="header-btn" type="button">
+            <button
+              class="header-btn sing-in"
+              type="button"
+            >
               Sing In
             </button>
           </li>
@@ -506,14 +509,18 @@
                   "
                 />
               </picture>
-              <p class="under-img-text">
-                By
-                <span class="content-bold">Wahid Ari </span
-                >| 03 March 2019
-              </p>
-              <a href="#" class="content-list-title-link">
-                Increasing Prosperity With Positive Thinking
-              </a>
+              <div class="under-img-container">
+                <p class="under-img-text">
+                  By
+                  <span class="content-bold"
+                    >Wahid Ari </span
+                  >| 03 March 2019
+                </p>
+                <a href="#" class="content-list-title-link">
+                  Increasing Prosperity With Positive
+                  Thinking
+                </a>
+              </div>
             </li>
             <li class="content-list-item">
               <picture>
@@ -540,14 +547,18 @@
                   "
                 />
               </picture>
-              <p class="under-img-text">
-                By
-                <span class="content-bold">Wahid Ari</span>
-                | 03 March 2019
-              </p>
-              <a href="#" class="content-list-title-link">
-                Motivation Is The First Step To Success
-              </a>
+              <div class="under-img-container">
+                <p class="under-img-text">
+                  By
+                  <span class="content-bold"
+                    >Wahid Ari</span
+                  >
+                  | 03 March 2019
+                </p>
+                <a href="#" class="content-list-title-link">
+                  Motivation Is The First Step To Success
+                </a>
+              </div>
             </li>
             <li class="content-list-item">
               <picture>
@@ -574,14 +585,19 @@
                   "
                 />
               </picture>
-              <p class="under-img-text">
-                By
-                <span class="content-bold">Wahid Ari</span>
-                | 03 March 2019
-              </p>
-              <a href="#" class="content-list-title-link">
-                Success Steps For Your Personal Or Business
-              </a>
+              <div class="under-img-container">
+                <p class="under-img-text">
+                  By
+                  <span class="content-bold"
+                    >Wahid Ari</span
+                  >
+                  | 03 March 2019
+                </p>
+                <a href="#" class="content-list-title-link">
+                  Success Steps For Your Personal Or
+                  Business
+                </a>
+              </div>
             </li>
           </ul>
         </div>
@@ -803,13 +819,15 @@
       <section class="companies-section">
         <div class="container companies-container">
           <div class="comptaniens-bg-container">
-            <h2 class="companies-title">
-              Join 100 Compannies who boost their business
-              with Product
-            </h2>
-            <button class="companies-btn" type="button">
-              Get This
-            </button>
+            <div class="companies-left-container">
+              <h2 class="companies-title">
+                Join 100 Compannies who boost their business
+                with Product
+              </h2>
+              <button class="companies-btn" type="button">
+                Get This
+              </button>
+            </div>
             <img
               class="companies-img"
               src="./images/companies/graphics.svg"
@@ -826,85 +844,131 @@
 
     <footer class="footer">
       <div class="container footer-container">
-        <a class="footer-logo" href="./index.html">
-          <img
-            src="./images/logo/logo.svg"
-            alt="Logo"
-            width="40"
-            height="36"
-          />
-          Product
-        </a>
-        <ul class="footer-list-icon">
-          <li class="footer-list-item">
-            <a
-              href="https://www.instagram.com/nyow228/"
-              target="_blank"
+        <div class="footer-up-container">
+          <div class="footer-logo-socials-container">
+            <a class="footer-logo" href="./index.html">
+              <img
+                src="./images/logo/logo.svg"
+                alt="Logo"
+                width="40"
+                height="36"
+              />
+              Product
+            </a>
+            <ul class="footer-list-icon">
+              <li class="footer-list-item">
+                <a
+                  href="https://www.instagram.com/nyow228/"
+                  target="_blank"
+                >
+                  <div class="footer-icon-container">
+                    <svg
+                      class="footer-socials-icon"
+                      width="24"
+                      height="24"
+                    >
+                      <use
+                        href="./images/icons.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="footer-list-item">
+                <a href="#" target="_blank">
+                  <div class="footer-icon-container">
+                    <svg
+                      class="footer-socials-icon"
+                      width="24"
+                      height="24"
+                    >
+                      <use
+                        href="./images/icons.svg#icon-facebook"
+                      ></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="footer-list-item">
+                <a href="#" target="_blank">
+                  <div class="footer-icon-container">
+                    <svg
+                      class="footer-socials-icon"
+                      width="24"
+                      height="24"
+                    >
+                      <use
+                        href="./images/icons.svg#icon-twitter"
+                      ></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-list-container">
+            <div class="footer-list-item-container">
+              <p class="footer-title">Resource</p>
+              <ul class="footer-list-menu">
+                <li class="footer-list-meni-item">
+                  About Us
+                </li>
+                <li class="footer-list-meni-item">Blog</li>
+                <li class="footer-list-meni-item">
+                  Contact
+                </li>
+                <li class="footer-list-meni-item">FAQ</li>
+              </ul>
+            </div>
+            <div class="footer-list-item-container">
+              <p class="footer-title">Legal Stuff</p>
+              <ul class="footer-list-menu">
+                <li class="footer-list-meni-item">
+                  Disclaimer
+                </li>
+                <li class="footer-list-meni-item">
+                  Financing
+                </li>
+                <li class="footer-list-meni-item">
+                  Privacy Policy
+                </li>
+                <li class="footer-list-meni-item">
+                  Terms of Service
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <form class="footer-form">
+            <label
+              class="footer-form-label"
+              for="footer-email"
             >
-              <img
-                src="./images/footer-icon/socials1.png"
-                alt="instagram"
-                width="40"
-                height="40"
+              knowing you're always on the best energy deal.
+            </label>
+            <div class="footer-form-input-cont">
+              <input
+                class="footer-input"
+                type="text"
+                id="footer-email"
+                name="footer-email"
+                placeholder="Enter your phone number"
               />
-            </a>
-          </li>
-          <li class="footer-list-item">
-            <a href="#" target="_blank">
-              <img
-                src="./images/footer-icon/socials2.png"
-                alt="facebook"
-                width="40"
-                height="40"
-              />
-            </a>
-          </li>
-          <li class="footer-list-item">
-            <a href="#" target="_blank">
-              <img
-                src="./images/footer-icon/socials3.png"
-                alt="twitter"
-                width="40"
-                height="40"
-              />
-            </a>
-          </li>
-        </ul>
-        <p class="footer-title">Resource</p>
-        <ul class="footer-list-menu">
-          <li class="footer-list-meni-item">About Us</li>
-          <li class="footer-list-meni-item">Blog</li>
-          <li class="footer-list-meni-item">Contact</li>
-          <li class="footer-list-meni-item">FAQ</li>
-        </ul>
-        <p class="footer-title">Legal Stuff</p>
-        <ul class="footer-list-menu">
-          <li class="footer-list-meni-item">Disclaimer</li>
-          <li class="footer-list-meni-item">Financing</li>
-          <li class="footer-list-meni-item">
-            Privacy Policy
-          </li>
-          <li class="footer-list-meni-item">
-            Terms of Service
-          </li>
-        </ul>
-        <form class="footer-form">
-          <label
-            class="footer-form-label"
-            for="footer-email"
-          >
-            knowing you're always on the best energy deal.
-          </label>
-          <input
-            class="footer-input"
-            type="text"
-            id="footer-email"
-            name="footer-email"
-          />
-          <button class="footer-btn" type="button">
-            Sign up Now
-          </button>
-        </form>
+              <svg
+                class="footer-form-icon"
+                width="18"
+                height="24"
+              >
+                <use
+                  href="./images/icons.svg#icon-phone-footer"
+                ></use>
+              </svg>
+            </div>
+            <button class="footer-btn" type="button">
+              Sign up Now
+            </button>
+          </form>
+        </div>
         <p class="footer-under-text">
           Made With Love By Figmaland All Right Reserved
         </p>
