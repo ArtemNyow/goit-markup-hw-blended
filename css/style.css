@@ -215,7 +215,9 @@ section {
     align-items: center;
     background: transparent;
     border: none;
+    outline: none;
     height: 53px;
+
 }
 
 .hero-img {
