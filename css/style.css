@@ -6,13 +6,26 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a:hover,
+a:focus {
+    color: #02897a;
 }
 
 a:focus,
 a:active {
     outline: none;
-    color: inherit;
+    color: #026f64;
 }
+
+a:active {
+    transform: scale(0.96);
+}
+
 
 ul,
 ol {
@@ -20,6 +33,7 @@ ol {
     margin: 0;
     padding-left: 0;
 }
+
 
 h1,
 h2,
@@ -31,21 +45,82 @@ p {
     margin: 0;
 }
 
+
 img {
     display: block;
 }
 
-button {
+
+button,
+.header-btn,
+.hero-btn-get,
+.product-btn,
+.price-btn,
+.footer-btn,
+.enterpreneur-btn {
     cursor: pointer;
     font-weight: 600;
     text-align: center;
-
     border-radius: 4px;
-
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
+
+
+button:hover,
+.header-btn:hover,
+.hero-btn-get:hover,
+.product-btn:hover,
+.price-btn:hover,
+.footer-btn:hover,
+.enterpreneur-btn:hover {
+    background-color: #026f64;
+    transform: scale(1.03);
+}
+
+
+button:active,
+.header-btn:active,
+.hero-btn-get:active,
+.product-btn:active,
+.price-btn:active,
+.footer-btn:active,
+.enterpreneur-btn:active {
+    background-color: #015e56;
+    transform: scale(0.95);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+button:focus,
+.header-btn:focus,
+.hero-btn-get:focus,
+.product-btn:focus,
+.price-btn:focus,
+.footer-btn:focus,
+.enterpreneur-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(2, 137, 122, 0.4);
+}
+
+
+.sing-in:hover,
+.companies-btn:hover {
+    background-color: #eeeeee;
+    transform: scale(1.03);
+}
+
+.sing-in:active,
+.companies-btn:active {
+    background-color: #dddddd;
+    transform: scale(0.95);
+}
+
 
 section {
     padding-bottom: 100px;
+    scroll-margin-top: 30px;
 }
 
 .container {
@@ -60,6 +135,14 @@ section {
         padding: 0 145px;
     }
 }
+
+
+
+
+
+
+
+
 
 /*  #region Header */
 
@@ -1209,6 +1292,12 @@ section {
     flex-direction: column;
 }
 
+.footer-link {
+    font-weight: 400;
+    line-height: 2.19;
+    color: #22343d;
+}
+
 .footer-logo {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -1335,7 +1424,7 @@ section {
     .footer-container {
         display: flex;
         flex-direction: column;
-        width: 1110px;
+        padding-bottom: 40px;
     }
 
     .footer-up-container {
@@ -1352,7 +1441,7 @@ section {
     .footer-list-container {
         display: flex;
         gap: 129px;
-        margin-right: 83px;
+        margin-right: 82px;
     }
 
 
@@ -1966,3 +2055,100 @@ section {
 }
 
 /*   #endregion faq  */
+/* four PAGE */
+/*  #region Great Business */
+.container {}
+
+.great-business-container {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    w
+}
+
+.great-business {}
+
+.great-left-site {}
+
+.great-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.49;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: #22343d;
+    width: 350px;
+    margin-bottom: 16px;
+}
+
+.great-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.71;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: #22343d;
+    margin-bottom: 19px;
+}
+
+.great-form {
+    margin-bottom: 24px;
+    position: relative;
+    width: 346px;
+}
+
+.great-input {
+    border: 1px solid #eaeaea;
+    border-radius: 100px;
+    width: 346px;
+    height: 66px;
+    padding-left: 23px;
+}
+
+.great-input::placeholder {
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: #22343d;
+
+}
+
+.great-btn {
+    position: absolute;
+    left: 216px;
+    top: 8px;
+    border-radius: 100px;
+    padding: 24px;
+    width: 122px;
+    height: 50px;
+    background: #02897a;
+    font-weight: 600;
+    line-height: 0;
+    color: #fff;
+}
+
+.joun-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 88px;
+}
+
+.great-join-group-text {
+    font-weight: 400;
+    font-size: 14px;
+    color: #4f596a;
+}
+
+.green {
+    font-weight: 500;
+    color: #02897a;
+}
+
+.great-business-img {}
+
+/*   #endregion Great Business  */
+/*  #region Latest Stories */
+/*   #endregion Latest Stories  */
+/*  #region Contact Us */
+/*   #endregion Contact Us  */
