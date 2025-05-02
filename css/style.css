@@ -1427,13 +1427,6 @@ section {
     margin-bottom: 44px;
 }
 
-.footer-under-text {
-    font-weight: 400;
-    line-height: 1.875;
-    text-align: center;
-    color: #22343d;
-}
-
 @media screen and (min-width:1440px) {
 
     .footer-container {
@@ -2074,7 +2067,6 @@ section {
 /*   #endregion faq  */
 /* four PAGE */
 /*  #region Great Business */
-.container {}
 
 .great-business-container {
     padding-top: 50px;
@@ -2082,10 +2074,6 @@ section {
     flex-direction: column;
 
 }
-
-.great-business {}
-
-.great-left-site {}
 
 .great-title {
     font-weight: 600;
@@ -2162,16 +2150,28 @@ section {
     color: #02897a;
 }
 
-.great-business-img {}
+
+@media screen and (min-width:1440px) {
+
+    .great-business-container {
+        display: flex;
+        flex-direction: row;
+        gap: 46px;
+    }
+
+    .great-title {
+        text-align: unset;
+    }
+
+    .great-text {
+        text-align: unset;
+        width: 535px;
+    }
+}
+
 
 /*   #endregion Great Business  */
 /*  #region Latest Stories */
-
-.latest-stories-section {}
-
-.container {}
-
-.latest-stories-container {}
 
 .latest-title {
     font-weight: 700;
@@ -2196,8 +2196,6 @@ section {
     align-items: center;
     margin-bottom: 50px;
 }
-
-.latest-list-item {}
 
 .latest-img {
     border: 1px solid #dedede;
@@ -2249,13 +2247,27 @@ section {
     fill: #2e3a59;
 }
 
+@media screen and (min-width:1440px) {
+
+    .latest-text {
+        margin-bottom: 32px;
+    }
+
+    .latest-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    .under-list-link-text {
+        margin-bottom: 32px;
+    }
+
+
+}
+
 /*   #endregion Latest Stories  */
 /*  #region Contact Us */
-.contact-section {}
-
-.container {}
-
-.contact-container {}
 
 .contact-title {
     font-weight: 700;
@@ -2285,8 +2297,6 @@ section {
     margin-bottom: 56px;
 }
 
-.contact-list-item {}
-
 .contact-icon-container {
     border-radius: 100%;
     fill: #edfffc;
@@ -2303,8 +2313,6 @@ section {
     height: 323px;
     margin-bottom: 100px;
 }
-
-.form-wrap {}
 
 .contact-form-title {
     font-weight: 700;
@@ -2363,7 +2371,7 @@ section {
     line-height: 1.07;
     letter-spacing: 0.01em;
     color: #22343d;
-    vertical-align: top;
+    resize: none;
 }
 
 
@@ -2371,13 +2379,26 @@ section {
 .contact-form-btn {
     border-radius: 35px;
     padding: 18px 38px;
-    width: 100%;
+    width: 145px;
     height: 52px;
     background: #02897a;
     font-weight: 500;
     line-height: 1;
     letter-spacing: 0.01em;
     color: #fff;
+}
+
+@media screen and (min-width:1440px) {
+    .contact-container {
+        width: 871px;
+    }
+
+    .form-wrap {
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        padding: 52px 50px;
+    }
+
 }
 
 /*   #endregion Contact Us  */
